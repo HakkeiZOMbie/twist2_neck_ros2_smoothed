@@ -3,7 +3,7 @@
 <package format="3">
   <name>twist2_neck_ros2</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>Package for TWIST2 Neck XR teleoperation. Contains drivers and launchfile.</description>
   <maintainer email="humansbadrobotsgood@gmail.com">g1neck</maintainer>
   <license>Apache-2.0</license>
 
