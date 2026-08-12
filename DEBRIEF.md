@@ -21,7 +21,7 @@ The links to the repositories may be found here
 # Camera streaming
 The TWIST2 Neck contains two Tear Four C1 Cameras, which when connected to a machine running linux, shows up as
 two `v4l2` cameras. The feeds from this two camera should be streamed back to the headset. 
-You will probably need to dig around IsaacTeleop or CloudXR (the XR provider that IsaacTeleop uses) docs to learn how video streaming is done.
+The approrpriate tool for this seems to be [Televiz](https://nvidia.github.io/IsaacTeleop/main/getting_started/televiz.html)
 
 # Launch file
 Learn more about them [here](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Launch/Creating-Launch-Files.html).
