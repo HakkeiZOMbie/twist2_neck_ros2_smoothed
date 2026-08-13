@@ -1,0 +1,20 @@
+{
+  "device_name": "/dev/ttyUSB0",
+  "baudrate": 57600,
+  "yaw": {
+    "id": 1,
+    "center": 2048,
+    "ratio": -0.9091,
+    "min": 275,
+    "max": 4250,
+    "resolution": 4096
+  },
+  "pitch": {
+    "id": 2,
+    "center": 2048,
+    "ratio": 1.0,
+    "min": 1625,
+    "max": 3025,
+    "resolution": 4096
+  }
+}

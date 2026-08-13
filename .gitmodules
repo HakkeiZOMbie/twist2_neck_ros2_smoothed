@@ -1,0 +1,3 @@
+[submodule "twist2_neck_ros2/neck_controller"]
+	path = twist2_neck_ros2/neck_controller
+	url = git@github.com:TWIST2-C1/TWIST2-Neck-Controller.git
