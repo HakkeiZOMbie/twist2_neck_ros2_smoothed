@@ -1,5 +1,7 @@
 This file is a guide for developers. If you are a user, read the README file instead.
 
+Note: A working prototype has been create, thus making this note irrelevant. Consult the README instead
+
 # TWIST2 Neck Ros2
 This repository is a ROS2 package for enabling XR teleoperation of the TWIST2 Neck (teleoperation with a VR headset).
 The package should contain:
@@ -21,8 +23,11 @@ The links to the repositories may be found here
 # Camera streaming
 The TWIST2 Neck contains two Tear Four C1 Cameras, which when connected to a machine running linux, shows up as
 two `v4l2` cameras. The feeds from this two camera should be streamed back to the headset. 
-The approrpriate tool for this seems to be [Televiz](https://nvidia.github.io/IsaacTeleop/main/getting_started/televiz.html)
-and [camera_viz](https://nvidia.github.io/IsaacTeleop/main/references/camera_streaming.html)
+This will be done using [camera_viz](https://nvidia.github.io/IsaacTeleop/main/references/camera_streaming.html).
+Currently, `camera_viz` does not have an implementation for stereo vision using two v4l2 cameras, but this
+capability can be extended by creating a class that inherits `FrameSource` 
+
+Note: `/dev/video0` is left, `/dev/video2` is right
 
 # Launch file
 Learn more about them [here](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Launch/Creating-Launch-Files.html).
