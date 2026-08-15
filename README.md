@@ -34,11 +34,12 @@ The modified Twist2 Neck utilizes two TIER IV C1 cameras and camera streaming is
 [fork](https://github.com/TWIST2-C1/IsaacTeleop) of [`camera_viz`](https://nvidia.github.io/IsaacTeleop/main/references/camera_streaming.html).
 The C1 cameras are recognized as generic `v4l2` cameras and are combined into a single stereo source.
 `camera_viz` needs its own python virtual environment in order to work, and you may set one up as follows:
+
 note: **DO NOT USE SYSTEM PYTHON FOR THIS!!** `camera_viz` uses numpy v2 and will break compatibility.
 1. Open a terminal in the workspace directory
-2. Create a new conda venv named `camera_venv`
+2. Create a new conda venv named `camera_env`
    ```bash
-   conda create --name camera_venv python=3.12
+   conda create --name camera_env python=3.12
    ```
 3. Run `camera_viz`'s setup script (for jetson)
    ```bash
