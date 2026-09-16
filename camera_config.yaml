@@ -21,10 +21,10 @@ cameras:
   - name: dualcam
     enabled: true
     type: v4l2stereo
-    device_left: /dev/video1
-    device_right: /dev/video4
+    device_left: /dev/video0
+    device_right: /dev/video2
     width: 1920
-    height: 1280
+    height: 1080
     fps: 30
     rtp:                        # used by camera_streamer + source: rtp receivers
       port: 5000
@@ -49,6 +49,7 @@ display:
       # reposition_distance: 0.2
       # reposition_delay_s: 0.1
       # transition_duration_s: 0.3
+      stereo_baseline_mm: 80.0
       size: [2.0, 1.333]
       distance: 1.5
       offset_x: 0
